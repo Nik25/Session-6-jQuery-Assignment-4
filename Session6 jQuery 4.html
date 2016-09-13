@@ -1,0 +1,26 @@
+<!--Change the background Color of the <div> element of
+the following code on clicking the button-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.1.0.js" 
+       integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+      <title>Session 6 jquery Assignment4</title>
+</head>
+
+<body>
+	 <div style="background-color:yellow">
+	   <p>Click the button to change the background color of this paragraph.</p>
+	 <button>Click me!</button>
+
+ <script type="text/javascript">
+ 
+	 $("div").on( "click", "button", function( event ) {
+	  $(event.delegateTarget ).css( "background-color", "orange");
+	});
+ 
+</script>
+</body>
+</html>
